@@ -121,6 +121,7 @@
       },
       login() {
         this.setWarningMessage(null);
+        this.setSuccessMessage(null);
 
         const user = {
           email: this.email,
@@ -135,9 +136,9 @@
           console.log('res', res);
 
           const experationDate = new Date(now.getTime() + res.data.expiresIn * 1000);
-          localStorage.setItem('token', res.data.token);
-          localStorage.setItem('userId', res.data.userId);
-          localStorage.setItem('experationDate', experationDate);
+          localStorage.setItem('vox-token', res.data.token);
+          localStorage.setItem('vox-userId', res.data.userId);
+          localStorage.setItem('vox-experationDate', experationDate);
 
           this.loading = false;
 
