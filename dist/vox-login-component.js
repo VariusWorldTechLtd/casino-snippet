@@ -22728,7 +22728,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         password: this.password
       };
 
-      __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('http://localhost:3000/api/user/login', user).then(res => {
+      __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('http://142.93.42.221/api/user/login', user).then(res => {
         console.log(res);
         const now = new Date();
 

@@ -127,7 +127,7 @@
           password: this.password
         }
 
-        axios.post('http://localhost:3000/api/user/login', user)
+        axios.post('http://142.93.42.221/api/user/login', user)
         .then(res => {
           console.log(res);
           const now = new Date();
