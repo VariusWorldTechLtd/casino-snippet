@@ -3,7 +3,9 @@
   <div id="vox-login">
 
     <div id="vox-login-button">
-      <button @click.prevent="openPopup" class="pure-button btn-bruschetta-tomato">Login with VoX</button>
+      <button @click.prevent="openPopup" class="pure-button btn-bruschetta-tomato">
+        Login with <img id="vox-wallet-logo" src="/assets/vox_wallet-logo.png"/>
+      </button>
     </div>
 
     <div id="vox-popup" class="popup-wrapper hide">
@@ -165,7 +167,6 @@
 <style scoped>
   /* https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat */
   @import url('https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet');
-
   @import url(https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-min.css);
   @import url(https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/forms-min.css);
   @import url(https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/buttons-min.css);
@@ -174,6 +175,15 @@
   /*#vox-login > p h1 h2 h3 h4 h5 b a input {*/
   * {
     font-family: 'Montserrat', sans-serif;
+  }
+
+  #vox-login-button {
+    width: 100%;
+    height: 100%;
+  }
+
+  #vox-wallet-logo {
+    width: 60px;
   }
 
   #vox-warning-message {
@@ -204,7 +214,7 @@
 
   .vox-input {
     width: 80%;
-    height: 30px;
+    height: 40px;
   }
 
   #vox-company-logo {
@@ -213,7 +223,7 @@
     border-radius: 5%;
     align-content: center;
     align-items: center;
-    border: solid 2px gray;
+    /* border: solid 2px gray; */
     padding: 5px;
     margin: 5px 15px 5px 15px;
   }
@@ -233,22 +243,22 @@
   }
 
   #vox-info-section {
-    border-bottom: 1px solid #002e6d;
+    border-bottom: 1px solid #2A7DE1;
     padding-bottom: 10px;
-    background: #002e6d;
+    background: #2A7DE1;
     color: white;
   }
 
   .btn-bruschetta-tomato {
-    background: #002e6d;
+    background: #2A7DE1;
     color: white;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     padding: 10px 20px;
   }
 
   #vox-company-name {
-    margin-top: 30px;
-    margin-left: 25px;
+    margin-top: 35px;
+    margin-left: 50px;
   }
 
   .hide {
@@ -264,8 +274,8 @@
 
   .popup-title {
     padding: 10px 15px;
-    background-color: #002e6d;
-    border-bottom: 1px solid #002e6d;
+    background-color: #2A7DE1;
+    border-bottom: 1px solid #2A7DE1;
     color: white;
   }
 
